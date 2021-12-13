@@ -1,0 +1,176 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 617FB834
+P 5900 3600
+F 0 "A1" H 5900 4781 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 5900 4690 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 5900 3600 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 5900 3600 50  0001 C CNN
+	1    5900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TC00500:TC00500 U1
+U 1 1 617FF7B0
+P 4550 3450
+F 0 "U1" H 4550 3917 50  0000 C CNN
+F 1 "TC00500" H 4550 3826 50  0000 C CNN
+F 2 "MODULE_TC00500" H 4550 3450 50  0001 L BNN
+F 3 "" H 4550 3450 50  0001 L BNN
+F 4 "N/A" H 4550 3450 50  0001 L BNN "PARTREV"
+F 5 "Manufacturer Recommendations" H 4550 3450 50  0001 L BNN "STANDARD"
+F 6 "37.5 mm" H 4550 3450 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "YKS" H 4550 3450 50  0001 L BNN "MANUFACTURER"
+	1    4550 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 3550 0    50   Input ~ 0
+sda
+Text GLabel 3800 3450 0    50   Input ~ 0
+scl
+Wire Wire Line
+	3800 3450 3950 3450
+Wire Wire Line
+	3750 3550 3950 3550
+Text GLabel 6600 4300 2    50   Input ~ 0
+sda
+Wire Wire Line
+	6600 4300 6400 4300
+Text GLabel 6600 4400 2    50   Input ~ 0
+scl
+Wire Wire Line
+	6600 4400 6400 4400
+Wire Wire Line
+	8400 2950 8250 2950
+Text GLabel 8400 2950 2    50   Input ~ 0
+scl
+Text GLabel 8400 3050 2    50   Input ~ 0
+sda
+Wire Wire Line
+	8400 3050 8250 3050
+Text GLabel 6100 2250 1    50   Input ~ 0
+5
+Wire Wire Line
+	6100 2250 6100 2600
+Wire Wire Line
+	8400 3350 8250 3350
+Wire Wire Line
+	5150 4000 5150 3750
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 618159F5
+P 7750 4000
+F 0 "J?" H 7858 4281 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7858 4190 50  0000 C CNN
+F 2 "" H 7750 4000 50  0001 C CNN
+F 3 "~" H 7750 4000 50  0001 C CNN
+	1    7750 4000
+	-1   0    0    1   
+$EndComp
+Text GLabel 7350 3900 0    50   Input ~ 0
+sda
+Wire Wire Line
+	7350 3900 7550 3900
+Text GLabel 7300 3800 0    50   Input ~ 0
+scl
+Wire Wire Line
+	7300 3800 7550 3800
+$Comp
+L power:GND #PWR?
+U 1 1 61819E23
+P 8400 3550
+F 0 "#PWR?" H 8400 3300 50  0001 C CNN
+F 1 "GND" H 8405 3377 50  0000 C CNN
+F 2 "" H 8400 3550 50  0001 C CNN
+F 3 "" H 8400 3550 50  0001 C CNN
+	1    8400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3550 8400 3350
+$Comp
+L power:GND #PWR?
+U 1 1 6181B5F4
+P 5150 4000
+F 0 "#PWR?" H 5150 3750 50  0001 C CNN
+F 1 "GND" H 5155 3827 50  0000 C CNN
+F 2 "" H 5150 4000 50  0001 C CNN
+F 3 "" H 5150 4000 50  0001 C CNN
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 904:904 U2
+U 1 1 617FCE72
+P 7650 3050
+F 0 "U2" H 7650 3617 50  0000 C CNN
+F 1 "904" H 7650 3526 50  0000 C CNN
+F 2 "MODULE_904" H 7650 3050 50  0001 L BNN
+F 3 "" H 7650 3050 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 7650 3050 50  0001 L BNN "STANDARD"
+F 5 "NA" H 7650 3050 50  0001 L BNN "PARTREV"
+F 6 "Adafruit" H 7650 3050 50  0001 L BNN "MANUFACTURER"
+F 7 "NA" H 7650 3050 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    7650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6181FF27
+P 8250 2750
+F 0 "#PWR?" H 8250 2600 50  0001 C CNN
+F 1 "+5V" H 8265 2923 50  0000 C CNN
+F 2 "" H 8250 2750 50  0001 C CNN
+F 3 "" H 8250 2750 50  0001 C CNN
+	1    8250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61820858
+P 5150 3250
+F 0 "#PWR?" H 5150 3100 50  0001 C CNN
+F 1 "+5V" H 5165 3423 50  0000 C CNN
+F 2 "" H 5150 3250 50  0001 C CNN
+F 3 "" H 5150 3250 50  0001 C CNN
+	1    5150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61821ADB
+P 7550 4000
+F 0 "#PWR?" H 7550 3850 50  0001 C CNN
+F 1 "+5V" H 7565 4173 50  0000 C CNN
+F 2 "" H 7550 4000 50  0001 C CNN
+F 3 "" H 7550 4000 50  0001 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61822084
+P 7550 4100
+F 0 "#PWR?" H 7550 3850 50  0001 C CNN
+F 1 "GND" H 7555 3927 50  0000 C CNN
+F 2 "" H 7550 4100 50  0001 C CNN
+F 3 "" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
