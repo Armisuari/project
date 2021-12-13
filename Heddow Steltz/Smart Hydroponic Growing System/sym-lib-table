@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Smart-Hydroponic-rescue)(type Legacy)(uri "${KIPRJMOD}/Smart Hydroponic-rescue.lib")(options "")(descr ""))
+  (lib (name ZC261500)(type Legacy)(uri "C:/Users/Hamba ALLAH/Downloads/Compressed/kicad-symbols-master/ZC261500.lib")(options "")(descr ""))
+)
